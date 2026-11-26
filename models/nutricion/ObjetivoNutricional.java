@@ -48,4 +48,20 @@ public class ObjetivoNutricional {
         this.fechaInicio = fechaInicio;
         this.fechaFin = fechaFin;
     }
+
+    public UUID getId() {
+        return id;
+    }
+
+    public void setId(UUID id) {
+        this.id = id;
+    }
+
+    public String getDescripcion() {
+        return descripcion;
+    }
+
+    public void setDescripcion(String descripcion) {
+        this.descripcion = descripcion;
+    }
 }
