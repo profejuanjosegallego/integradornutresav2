@@ -1,5 +1,6 @@
 package com.sazon.nutricion.models;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -34,5 +35,6 @@ public class ObjetivoNutricional {
 
     @ManyToOne
     @JoinColumn(name = "id_perfil_alimentario", nullable = false)
+    @JsonBackReference(value = "perfilalimentario-objetivonutricional")
     private PerfilAlimentario perfilAlimentario;
 }
