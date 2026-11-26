@@ -5,6 +5,8 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
 
 import java.time.LocalDate;
@@ -29,4 +31,8 @@ public class ObjetivoNutricional {
 
     @Column(name = "fecha_fin", nullable = false)
     private LocalDate fechaFin;
+
+    @ManyToOne
+    @JoinColumn(name = "id_perfil_alimentario", nullable = false)
+    private PerfilAlimentario perfilAlimentario;
 }
