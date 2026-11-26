@@ -40,4 +40,12 @@ public class ObjetivoNutricional {
 
     public ObjetivoNutricional() {
     }
+
+    public ObjetivoNutricional(String descripcion, Integer metaCalorias,
+                               LocalDate fechaInicio, LocalDate fechaFin) {
+        this.descripcion = descripcion;
+        this.metaCalorias = metaCalorias;
+        this.fechaInicio = fechaInicio;
+        this.fechaFin = fechaFin;
+    }
 }
