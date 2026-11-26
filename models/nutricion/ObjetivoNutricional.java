@@ -7,6 +7,7 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
+import java.time.LocalDate;
 import java.util.UUID;
 
 @Entity
@@ -22,4 +23,7 @@ public class ObjetivoNutricional {
 
     @Column(name = "meta_calorias", nullable = false)
     private Integer metaCalorias;
+
+    @Column(name = "fecha_inicio", nullable = false)
+    private LocalDate fechaInicio;
 }
