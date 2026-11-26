@@ -19,4 +19,7 @@ public class ObjetivoNutricional {
 
     @Column(name = "descripcion", nullable = false, length = 200)
     private String descripcion;
+
+    @Column(name = "meta_calorias", nullable = false)
+    private Integer metaCalorias;
 }
