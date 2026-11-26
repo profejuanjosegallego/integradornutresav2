@@ -88,4 +88,12 @@ public class ObjetivoNutricional {
     public void setFechaFin(LocalDate fechaFin) {
         this.fechaFin = fechaFin;
     }
+
+    public PerfilAlimentario getPerfilAlimentario() {
+        return perfilAlimentario;
+    }
+
+    public void setPerfilAlimentario(PerfilAlimentario perfilAlimentario) {
+        this.perfilAlimentario = perfilAlimentario;
+    }
 }
