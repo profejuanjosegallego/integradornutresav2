@@ -37,4 +37,7 @@ public class ObjetivoNutricional {
     @JoinColumn(name = "id_perfil_alimentario", nullable = false)
     @JsonBackReference(value = "perfilalimentario-objetivonutricional")
     private PerfilAlimentario perfilAlimentario;
+
+    public ObjetivoNutricional() {
+    }
 }
