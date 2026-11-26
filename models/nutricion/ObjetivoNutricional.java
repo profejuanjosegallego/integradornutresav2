@@ -64,4 +64,12 @@ public class ObjetivoNutricional {
     public void setDescripcion(String descripcion) {
         this.descripcion = descripcion;
     }
+
+    public Integer getMetaCalorias() {
+        return metaCalorias;
+    }
+
+    public void setMetaCalorias(Integer metaCalorias) {
+        this.metaCalorias = metaCalorias;
+    }
 }
