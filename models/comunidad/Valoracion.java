@@ -11,7 +11,6 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
-import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
 
 @Entity
@@ -37,11 +36,6 @@ public class Valoracion {
 
     @Column(name = "idUsuario", nullable = false)
     private UUID idUsuario;
-
-    @OneToMany(mappedBy = "valoracion")
-    @JsonManagedReference(value = "valoracionComentario")
-    private List<Comentario> comentarios;
-
 
     public Valoracion() {
     }
